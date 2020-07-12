@@ -1,37 +1,386 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/lwwlyl/VictorLiu.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>David Abel</title>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/extra_min_styles.css"">
+        <meta name="viewport" content="width=device-width">
+        <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
-```markdown
-Syntax highlighted code block
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://i.icomoon.io/public/temp/57136724af/UntitledProject/style-svg.css">
 
-# Header 1
-## Header 2
-### Header 3
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script>
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-118294862-1']);
+          _gaq.push(['_trackPageview']);
+          
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+    </head>
 
-- Bulleted
-- List
+    <!-- ALL CONTENT -->
+    <div class="wrapper">
+    <!-- BODY -->
+    <body>
 
-1. Numbered
-2. List
+    <!-- HEADER -->
+    <header>
+        <h1 align="middle">David Abel</h1>
 
-**Bold** and _Italic_ and `Code` text
+        <!-- Picture + Links + News -->
+        <div align="middle" style="margin-bottom: 10px">
 
-[Link](url) and ![Image](src)
-```
+            <!-- Portrait -->
+            <img src="images/portrait.JPG" alt="Portrait" WIDTH=190 style="margin-bottom: 8px;border-radius: 10px;">
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+            <div style="margin-bottom: 6px;">david_abel@brown.edu</div>
 
-### Jekyll Themes
+            <!-- CV -->
+            <a href="david_abel_cv.pdf" onclick="_gaq.push(['_trackEvent', 'Click', 'CV Clicked']);" style="margin-right:14px;"><i class="ai ai-cv" style="font-size: 32px;"></i>
+            </a>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lwwlyl/VictorLiu.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+            <!-- Git -->
+            <a href="https://github.com/david-abel" onclick="_gaq.push(['_trackEvent', 'Click', 'git Clicked']);" style="margin-right:14px;">
+                <i class="fa fa-github" style="font-size:32px;"></i>
+                <!-- color: #A7A499" -->
+            </a>
 
-### Support or Contact
+            <!-- Scholar -->
+            <a href="https://scholar.google.com/citations?user=lvBJlmwAAAAJ&hl=en" onclick="_gaq.push(['_trackEvent', 'Click', 'Scholar Clicked']);" style="margin-right:14px;">
+                <i class="ai ai-google-scholar big-icon" style="font-size:32px;"></i>
+            </a>
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+            <!-- Twitter -->
+            <a href="https://twitter.com/dabelcs" onclick="_gaq.push(['_trackEvent', 'Click', 'Twitter Clicked']);">
+                <i class="fa fa-twitter" style="font-size:32px;"></i>
+            </a>
+            <br>
+            <br>
+        </div>
+
+
+    <!-- Put "nav" here for side bar nav -->
+        <ul class='navbar'>
+            <li class='navbar_li' id="selected"><a href='index.html'>Home</a></li>
+            <li class='navbar_li'><a href='papers.html'>Publications</a></li>
+            <li class='navbar_li'><a href='notes.html'>Notes</a></li>
+            <li class='navbar_li'><a href='teaching.html'>Teaching</a></li>
+            <li class='navbar_li'><a href='blog.html'>Blog</a></li>
+            <li class='navbar_li'><a href='collaborators.html'>Collaborators</a></li>
+        </ul>
+
+
+    </header>
+
+
+      <!-- BODY -->
+    <section>
+        <h3>Welcome!</h3>
+
+        <p> I just completed my Ph.D in Computer Science at Brown University, where I was fortunate to be advised by <a href="http://cs.brown.edu/~mlittman/" onclick="_gaq.push(['_trackEvent', 'Click', 'Michael Clicked']);">Prof. Michael Littman</a>.</p>
+        
+        <!-- NEWS -->
+        <h3>News</h3>
+            <ul>
+
+                <li>Fall 2020 I will be joining DeepMind London as a Research Scientist!</li>
+                <li>June 26: New ICML <a href="https://arxiv.org/pdf/2006.15085.pdf">paper</a> out on affordances in RL.</li>
+                <li>April 27: My <a href="https://david-abel.github.io/thesis.pdf" onclick="_gaq.push(['_trackEvent', 'Click', 'Thesis (a) Clicked']);">dissertation</a> is done!</li>
+                <li>April 7: I defended my thesis!</li>
+                <li>March 1: New AISTATS <a href="https://david-abel.github.io/papers/aistats2020_vpsa-full.pdf">paper</a> out on state-action abstraction.</li>
+                <li>February 1: New AAAI <a href="https://david-abel.github.io/papers/aaai2020_plan_to_plan.pdf">paper</a> out on understanding human planning.</li>
+
+                <li>December 15: <a href="https://david-abel.github.io/notes/neurips_2019.pdf" onclick="_gaq.push(['_trackEvent', 'Click', 'NeurIPS 2019 Notes Clicked']);">Notes from NeurIPS 2019 available</a>. </li>
+               
+                <li>December 8-14: At NeurIPS to give a talk (<a href="https://drive.google.com/file/d/19YHF48r_qK3Wb6ULqI5K6XcwviZ0U1lz/view?usp=sharing">slides</a>, <a href="https://slideslive.com/38921884/metalearning-3">video</a>) at the <a href="http://metalearning.ml/2019/">Meta-Learning workshop</a> .</li>
+
+
+            </ul>
+
+
+        <!-- INTERESTS -->
+        <h3> Interests </h3>
+
+        <p>My research focuses on bringing mathematical clarity to the central philosophical questions surrounding computation and learning.</p>
+
+
+        <p>I'm currently interested in understanding <i>abstraction</i> and its role in agency. I study how rational agents model the worlds they inhabit, focusing on the representational practices that underly effective learning and planning. I typically work with the reinforcement learning problem, drawing on tools and ideas from computational learning theory, computational complexity, analytic philosophy, and information theory.</p>
+
+        <p>I also care deeply about the mission of <a href="http://www.compsust.net/">computational sustainability</a>.</p>
+
+
+        <!-- FEATURED PUBLICATIONS -->
+        <h3> Featured Work </h3>
+
+
+        <table style="margin-top:-12px;">
+
+            <!-- Work -->
+            <tr style="border-bottom:1px solid #e5e5e5;">
+                <!-- IMAGE -->
+                <td>
+                    <img class="workPicture" src="images/thesis_overview.jpg" alt="Thesis overview">
+                </td>
+
+                <!-- TITLE AND INFO -->
+                <td>
+                    <br>
+                    <div id="indexWorkText">
+                        <!-- Title + Link -->
+                        <b><a href="https://david-abel.github.io/thesis.pdf" onclick="_gaq.push(['_trackEvent', 'Click', 'Thesis (b) Clicked']);">A Theory of Abstraction in Reinforcement Learning </a></b>
+                        <br>
+                        <i>Ph.D Thesis, 2020</i>
+                    </div>
+                    <br>
+                    <!-- One sentence description -->
+                    <div id="indexWorkText">
+                        My dissertation, aimed at understanding abstraction and its role in effective reinforcement learning.
+                    </div>
+                    <br>
+
+                    <!-- Collaborators -->
+                    <div id="indexWorkText">
+                        Advised by <a href="http://cs.brown.edu/~mlittman/">Michael L. Littman</a>.
+                    </div>
+                    <br>
+                    <br>
+                </td>
+            </tr>
+
+            <!-- Work -->
+            <tr style="border-bottom:1px solid #e5e5e5;">
+                <!-- IMAGE -->
+                <td>
+                    <img class="workPicture" src="images/vpsa1.jpg" alt="Value Preserving Abstractions">
+                </td>
+
+                <!-- TITLE AND INFO -->
+                <td>
+                    <br>
+                    <div id="indexWorkText">
+                        <!-- Title + Link -->
+                        <b><a href="papers/aistats2020_vpsa-full.pdf" onclick="_gaq.push(['_trackEvent', 'Click', 'VPSA Paper Clicked']);">Value Preserving State-Action Abstractions </a></b>
+                        <br>
+                        <i>AISTATS 2020</i>
+                    </div>
+                    <br>
+                    <!-- One sentence description -->
+                    <div id="indexWorkText">
+                        We prove which combinations of state abstractions and options are guaranteed to preserve representation of near-optimal policies in any finite Markov Decision Process.
+                    </div>
+                    <br>
+
+                    <!-- Collaborators -->
+                    <div id="indexWorkText">
+                        Joint work with <a href="https://www.linkedin.com/in/umbanhowar">Nathan Umabnhowar</a>, <a href="https://kkhetarpal.wordpress.com/">Khimya Khetarpal</a>, <a href="http://dilipa.github.io/">Dilip Arumugam</a>, <a href="https://www.cs.mcgill.ca/~dprecup/">Doina Precup</a>, and <a href="http://cs.brown.edu/~mlittman/">Michael L. Littman</a>.
+                    </div>
+                    <br>
+                    <br>
+                </td>
+            </tr>
+
+            <!-- Work -->
+            <tr style="border-bottom:1px solid #e5e5e5;">
+                <!-- IMAGE -->
+                <td>
+                    <img class="workPicture" src="images/p2pc.jpg" alt="Planned Information Processing">
+                </td>
+
+                <!-- TITLE AND INFO -->
+                <td>
+                    <br>
+                    <div id="indexWorkText">
+                        <!-- Title + Link -->
+                        <b><a href="papers/aaai2020_plan_to_plan.pdf" onclick="_gaq.push(['_trackEvent', 'Click', 'Plan-to-Plan Paper Clicked']);">The Efficiency of Human Cognition Reflects Planned Use of Information Processing</a></b>
+                        <br>
+                        <i>AAAI 2020</i>
+                    </div>
+                    <br>
+                    <!-- One sentence description -->
+                    <div id="indexWorkText">
+                        We develop a model that characterizes the planned use of information processing as a meta-reasoning problem and study this model's capacity to predict human reaction times in simple tasks.
+                    </div>
+                    <br>
+
+                    <!-- Collaborators -->
+                    <div id="indexWorkText">
+                        By <a href="https://markkho.github.io">Mark K. Ho</a>, myself, <a href="https://webapps.pni.princeton.edu/ncc/JDC/Home_Page.html">Jonathan D. Cohen</a>, <a href="http://cs.brown.edu/~mlittman/">Michael L. Littman</a>, <a href="http://cocosci.princeton.edu/tom/index.php">Thomas L. Griffiths</a>.
+                    </div>
+                    <br>
+                    <br>
+                </td>
+            </tr>
+
+            <!-- Work -->
+            <tr style="border-bottom:1px solid #e5e5e5;">
+                <!-- IMAGE -->
+                <td>
+                    <img class="workPicture" src="images/voa4.jpg" alt="The process of abstraction">
+                </td>
+
+                <!-- TITLE AND INFO -->
+                <td>
+                    <br>
+                    <div id="indexWorkText">
+                        <!-- Title + Link -->
+                        <b><a href="papers/cobs2019_value_of_abstr.pdf" onclick="_gaq.push(['_trackEvent', 'Click', 'Plan-to-Plan Paper Clicked']);">The Value of Abstraction</a></b>
+                        <br>
+                        <i>Current Opinions in Behavioral Science 2019</i>
+                    </div>
+                    <br>
+                    <!-- One sentence description -->
+                    <div id="indexWorkText">
+                        We discuss the vital role that abstraction plays in efficient decision making.
+                    </div>
+                    <br>
+
+                    <!-- Collaborators -->
+                    <div id="indexWorkText">
+                        By <a href="https://markkho.github.io">Mark K. Ho</a>, myself, <a href="http://cs.brown.edu/~mlittman/">Michael L. Littman</a>, <a href="http://cocosci.princeton.edu/tom/index.php">Thomas L. Griffiths</a>.
+                    </div>
+                    <br>
+                    <br>
+                </td>
+            </tr>
+
+
+            <!-- Work 2 -->
+            <tr style="border-bottom:1px solid #e5e5e5;">
+                <!-- IMAGE -->
+                <td>
+                        <img class="workPicture" src="images/elm.jpg" alt="Expected-Length Option Model">
+                </td>
+
+                <!-- TITLE AND INFO -->
+                <td>
+                    <br>
+                    <div id="indexWorkText">
+                        <!-- Title + Link -->
+                        <b><a href="papers/elm_options_19.pdf" onclick="_gaq.push(['_trackEvent', 'Click', 'ELM Options Paper Clicked']);">The Expected-Length Model of Options </a></b>
+                        <br>
+                        <i>IJCAI 2019</i>
+                    </div>
+                    <br>
+                    <!-- One sentence description -->
+                    <div id="indexWorkText">
+                        We introduce and motivate the Expected-Length Model of Options, a simpler alternative for characterizing the transition and reward functions of options.
+                    </div>
+                    <br>
+
+                    <!-- Collaborators -->
+                    <div id="indexWorkText">
+                        Joint with <a href="https://github.com/jwinder1">John Winder</a>, <a href="https://www.csee.umbc.edu/~mariedj/">Marie desJardins</a>, and <a href="http://cs.brown.edu/~mlittman/">Michael L. Littman</a>.
+                    </div>
+                    <br>
+                    <br>
+                </td>
+            </tr>
+
+
+
+            <!-- Work 2 -->
+            <tr style="border-bottom:1px solid #e5e5e5;">
+                <!-- IMAGE -->
+                <td>
+                    <img class="workPicture" src="images/rlit.jpg" alt="State Abstr for Lifelong RL" class="roundImage">
+                </td>
+
+                <!-- TITLE AND INFO -->
+                <td>
+                    <br>
+                    <div id="indexWorkText">
+                        <!-- Title + Link -->
+                        <b><a href="papers/rlit_aaai_2019.pdf" onclick="_gaq.push(['_trackEvent', 'Click', 'RLIT AAAI Paper Clicked']);">State Abstraction as Compression in Apprenticeship Learning</a></b>
+                        <br>
+                        <i>AAAI 2019</i>
+                    </div>
+                    <br>
+
+                    <!-- One sentence description -->
+                    <div id="indexWorkText">
+                        We study state abstractions that trade-off between compression and optimality through rate-distortion theory.
+                    </div>
+                    <br>
+
+                    <!-- Collaborators -->
+                    <div id="indexWorkText">
+                        Joint work with <a href="http://dilipa.github.io/">Dilip Arumugam</a>, <a href="http://cs.brown.edu/people/kasadiat/">Kavosh Asadi</a>, <a href="https://jinnaiyuu.github.io/">Yuu Jinnai</a>, <a href="http://cs.brown.edu/~mlittman/">Michael L. Littman</a>, and <a href="https://www.ccis.northeastern.edu/people/lawson-wong/">Lawson L.S. Wong</a>.
+                    </div>
+                    <br>
+                    <br>
+                </td>
+            </tr>
+
+
+            <!-- Work 2 -->
+            <tr style="border-bottom:1px solid #e5e5e5;">
+                <!-- IMAGE -->
+                <td>
+                    <img class="workPicture" src="images/point_opt.jpg" alt="Point Options">
+                </td>
+
+                <!-- TITLE AND INFO -->
+                <td>
+                    <br>
+                    <div id="indexWorkText">
+                        <!-- Title + Link -->
+                        <b><a href="papers/finding_options_icml_19.pdf" onclick="_gaq.push(['_trackEvent', 'Click', 'Options-Planning Paper Clicked']);">Finding Options that Minimize Planning Time </a></b>
+                        <br>
+                        <i>ICML 2019</i>
+                    </div>
+                    <br>
+                    <!-- One sentence description -->
+                    <div id="indexWorkText">
+                        We prove that the problem of finding options that minimize planning time is NP-Hard.
+                    </div>
+                    <br>
+
+                    <!-- Collaborators -->
+                    <div id="indexWorkText">
+                        By <a href="https://jinnaiyuu.github.io/">Yuu Jinnai</a>, myself, <a href="https://dhershko.github.io/">D Ellis Hershkowitz</a>, <a href="http://cs.brown.edu/~mlittman/">Michael L. Littman</a>, and <a href="http://cs.brown.edu/people/gdk/">George Konidaris</a>.
+                    </div>
+                    <br>
+                    <br>
+                </td>
+            </tr>
+
+            
+        </table>
+
+
+
+        <!-- PERSONAL -->
+        <h4>Personal</h4>
+
+        <p> For fun, I'm a big fan of basketball, snowboarding, baking, games, and music (I play violin/guitar and mostly listen to progressive metal).</p>
+
+        <p> I'm an advocate of a few specific causes: sustainability efforts, existential risk minimization, space exploration, and improving the diversity, quality, and accessibility of education. </p>
+
+        <p> Always up for a chat -- shoot me an email if you'd like to discuss anything! </p>
+
+      </section>
+    </body>
+
+    <footer>
+        <br>
+        <p style="line-height: 1.2;" align=middle><small>Theme <a href="https://github.com/david-abel/minimal">based</a> on <a href="https://github.com/orderedlist/minimal">minimal</a> by <a href="https://github.com/orderedlist">orderedlist</a><br>
+        Copyright David Abel 2020</small></p>
+    </footer>
+    </div>
+</html>
